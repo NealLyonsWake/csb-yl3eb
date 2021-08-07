@@ -1,0 +1,252 @@
+body {
+  margin: 0px;
+  font: 18px "Open Sans", "Segoe UI", "Tahoma";
+  color: white;
+  background-color: rgba(10, 17, 23);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.609);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: white;
+}
+
+.on {
+  text-decoration: underline 2px;
+  color: white;
+}
+
+h1 {
+  color: #ff00ff;
+}
+
+header {
+  background-color: #0c1727ff;
+}
+
+.logo-container a {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(10, 17, 23);
+}
+
+.logo-container img {
+  width: 20%;
+  height: auto;
+  min-width: 160px;
+}
+
+#nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0% 10%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.Home,
+.About-us,
+.Sign-up,
+.social-media {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+main {
+  min-height: 693px;
+}
+
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0% 10%;
+}
+
+#on-now {
+  position: relative;
+}
+
+#on-now-info {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  width: 60%;
+}
+
+#on-now img {
+  width: 100%;
+  height: auto;
+}
+
+#schedule-heading {
+  margin-top: 50px;
+  color: #ff00ff;
+}
+
+#schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#schedule-container img {
+  width: 100%;
+  height: auto;
+}
+
+.schedule-card {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 10%;
+  flex-grow: 1;
+  border: 1px solid #0c1727ff;
+}
+
+.schedule-details {
+  margin-left: 10px;
+}
+
+#recommended {
+  position: relative;
+}
+
+#recommended img {
+  width: 100%;
+  height: auto;
+}
+
+#recommended-info {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  width: 60%;
+}
+
+#announcements-heading {
+  margin-top: 50px;
+  color: #ff00ff;
+}
+
+#announcements-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.announcements-card {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 30%;
+  flex-grow: 1;
+}
+
+.announcements-card img {
+  height: auto;
+  width: 100%;
+}
+
+footer {
+  background-color: #0c1727ff;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  text-align: center;
+}
+
+footer h5,
+footer h6 {
+  margin: 4px;
+}
+
+#nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 10%;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 250px;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  background-color: #e004e0;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font: 18px "Open Sans", "Segoe UI", "Tahoma";
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #f060f0;
+}
+
+@media screen and (max-width: 990px) {
+  #nav-header,
+  .main-content-container,
+  #nav-footer {
+    margin: 0px;
+  }
+  .about-us {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #on-now-info,
+  #recommended-info {
+    position: static;
+    width: 100%;
+  }
+  .schedule-card {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 30%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #schedule-container {
+    flex-direction: column;
+  }
+  .schedule-card {
+    width: 100%;
+  }
+  #announcements-container {
+    flex-direction: column;
+  }
+  .announcements-card {
+    width: 100%;
+  }
+}

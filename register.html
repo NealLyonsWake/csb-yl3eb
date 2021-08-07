@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!--Main header menu creation-->
+      <div class="header-menu">
+        <div class="logo-container">
+          <a href="index.html">
+            <img id="logo" src="./img/Logo.png" />
+          </a>
+        </div>
+
+        <!--Header nav bar creation-->
+        <nav id="nav-header">
+          <div class="Home">
+            <span
+              ><a href="./"><b>HOME</b></a></span
+            >
+          </div>
+
+          <div class="About-us">
+            <span
+              ><a href="./about.html"><b>ABOUT US</b></a></span
+            >
+          </div>
+          <div class="Sign-up">
+            <span
+              ><a class="on" href="./register.html"><b>SIGN UP</b></a></span
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--Main content container creation-->
+      <div class="register-content-container">
+        <div class="register">
+          <h1 id="sign-up-heading">Sign up</h1>
+          <h3 id="welcome-message">
+            Complete your registration and take advantage of our random
+            recommended feature, today!
+          </h3>
+          <div id="registration-form">
+            <form>
+              <div>
+                <label>
+                  <div id="label-name">Name:</div>
+                  <input id="name" type="text" minlength="4" required />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div id="label-email">Email:</div>
+                  <input id="email" type="email" minlength="4" required />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div id="label-password">Password:</div>
+                  <input
+                    id="password"
+                    type="password"
+                    minlength="12"
+                    required
+                  />
+                </label>
+              </div>
+            </form>
+            <div>
+              <button id="submit-button">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!--Main footer creation-->
+      <h5>Follow us</h5>
+      <nav id="nav-footer">
+        <div class="social-media">
+          <span
+            ><a href="https://www.youtube.com/" target="_blank"
+              ><b>YOUTUBE</b></a
+            ></span
+          >
+        </div>
+        <div class="social-media">
+          <span
+            ><a href="https://www.facebook.com/" target="_blank"
+              ><b>FACEBOOK</b></a
+            ></span
+          >
+        </div>
+        <div class="social-media">
+          <span
+            ><a href="https://twitter.com/" target="_blank"
+              ><b>TWITTER</b></a
+            ></span
+          >
+        </div>
+        <div class="social-media">
+          <span
+            ><a href="https://www.instagram.com/" target="_blank"
+              ><b>INSTAGRAM</b></a
+            ></span
+          >
+        </div>
+        <div class="social-media">
+          <span
+            ><a href="https://www.linkedin.com/home" target="_blank"
+              ><b>LINKEDIN</b></a
+            ></span
+          >
+        </div>
+      </nav>
+      <h6>Created by Neal Lyons-Wake</h6>
+    </footer>
+    <script src="register.js"></script>
+  </body>
+</html>
